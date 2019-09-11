@@ -10,7 +10,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./join-key.page.scss'],
 })
 export class JoinKeyPage implements OnInit {
-  private joinKeyForm: FormGroup;
+  public joinKeyForm: FormGroup;
 
   constructor(
     private router: Router,

@@ -14,10 +14,10 @@
   
       </ion-item>
 
-      <ion-item *ngIf="!loginForm.controls.username.valid  && (loginForm.controls.username.dirty || submitAttempt)">
+      <ion-item *ngIf="!loginForm.controls.username.valid  && (loginForm.controls.username.dirty)">
           <p>Please enter a valid username.</p>
       </ion-item>
-      <ion-item *ngIf="f.username.errors?.required && (loginForm.controls.username.dirty || submitAttempt)">
+      <ion-item *ngIf="f.username.errors?.required && (loginForm.controls.username.dirty)">
           <p>Username is required!</p>
       </ion-item>
 
