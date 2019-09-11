@@ -2,15 +2,15 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "types": []
+    "types": [],
+    "target": "es6",
+  "lib": [
+      "es2017",
+      "dom"
+  ]
   },
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-  ],
-  "target": "es6",
-"lib": [
-    "es2017",
-    "dom"
-]
+  ]
 }

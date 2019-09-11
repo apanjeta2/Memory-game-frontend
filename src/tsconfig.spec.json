@@ -5,7 +5,12 @@
     "types": [
       "jasmine",
       "node"
-    ]
+    ],
+    "target": "es6",
+    "lib": [
+      "es2017",
+      "dom"
+  ]
   },
   "files": [
     "test.ts",
@@ -15,10 +20,5 @@
   "include": [
     "**/*.spec.ts",
     "**/*.d.ts"
-  ],
-  "target": "es6",
-"lib": [
-    "es2017",
-    "dom"
-]
+  ]
 }
