@@ -76,7 +76,7 @@ export class GameService {
       GameService.isStarter = true;
       let ws = new SockJS(this.serverUrl);
       if (GameService.serverIPAddress !== null) {
-        this.serverUrl = `http://${GameService.serverIPAddress}/ws`;
+        this.serverUrl = `https://${GameService.serverIPAddress}/ws`;
         console.log("Adressa servera: ", this.serverUrl);
         console.log("IP servera: ", GameService.serverIPAddress);
       }
@@ -170,7 +170,7 @@ export class GameService {
 
       GameService.currentCode = userCode;
       if (GameService.serverIPAddress !== null) {
-        this.serverUrl = `http://${GameService.serverIPAddress}/ws`;
+        this.serverUrl = `https://${GameService.serverIPAddress}/ws`;
       }
       let ws = new SockJS(this.serverUrl);
       this.stompClient = Stomp.over(ws);
@@ -248,7 +248,7 @@ export class GameService {
 
       console.log("Join player:", GameService.gameJoin);
       if (GameService.serverIPAddress !== null) {
-        this.serverUrl = `http://${GameService.serverIPAddress}/ws`;
+        this.serverUrl = `https://${GameService.serverIPAddress}/ws`;
       }
       let ws = new SockJS(this.serverUrl);
       this.stompClient = Stomp.over(ws);
@@ -318,7 +318,7 @@ export class GameService {
     return new Promise((resolve, reject) => {
       //this.generateGrid();
       if (GameService.serverIPAddress !== null) {
-        this.serverUrl = `http://${GameService.serverIPAddress}/ws`;
+        this.serverUrl = `https://${GameService.serverIPAddress}/ws`;
       }
       let ws = new SockJS(this.serverUrl);
       this.stompClient = Stomp.over(ws);
