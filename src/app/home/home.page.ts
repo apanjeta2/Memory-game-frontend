@@ -14,7 +14,7 @@ import { GameService } from "../shared/game.service";
   styleUrls: ["home.page.scss"]
 })
 export class HomePage implements OnInit {
-  private loginForm: FormGroup;
+  public loginForm: FormGroup;
  
   constructor(
     private router: Router,
