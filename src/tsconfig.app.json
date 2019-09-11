@@ -7,10 +7,5 @@
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-  ],
-  "target": "es6",
-"lib": [
-    "es2017",
-    "dom"
-]
+  ]
 }
